@@ -9,7 +9,7 @@ pipeline {
             }
             stage("mkdir"){
                 steps{
-                     sh 'sudo mkdir /jk'
+                     sh "sudo mkdir /jk"
                 }
             }
              stage("cp"){
