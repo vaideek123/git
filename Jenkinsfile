@@ -10,7 +10,7 @@ pipeline {
              stage("cp"){
                 steps{
                      sh 'cp /var/lib/jenkins/workspace/pipe/index.html /var/www/html '
-                    
+                     sh 'systemct start httpd'
                 }
             }
         }
