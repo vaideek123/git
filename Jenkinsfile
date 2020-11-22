@@ -10,7 +10,7 @@ pipeline {
              stage("cp"){
                 steps{
                      sh 'sudo cp /var/lib/jenkins/workspace/pipe/index.html /var/www/html/'
-                     sh 'sudo systemct restart httpd'
+                     sh 'sudo systemctl restart httpd'
                 }
             }
         }
